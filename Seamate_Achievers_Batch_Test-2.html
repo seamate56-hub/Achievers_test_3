@@ -1,0 +1,390 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Seamate Achievers Batch Test</title>
+<style>
+:root{--n:#1d3f6e;--d:#0f2a4d;--bg:#eef2f8;--g:#2e9e5b;--r:#d64545;--p:#7b4fbf;--m:#98a2b3}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:#1b2436}
+.s{display:none;min-height:100vh}.s.on{display:block}
+.brand{display:flex;flex-direction:column;align-items:flex-end;padding:10px 16px;background:#fff;border-bottom:3px solid var(--n)}
+.brand img{height:68px}.brand h1{margin:2px 0 0;font:700 19px Georgia,serif;color:var(--n);text-align:right}
+.card{background:#fff;border-radius:10px;box-shadow:0 2px 12px #1d3f6e22;padding:20px;max-width:560px;margin:16px auto;width:calc(100% - 24px)}.wide{max-width:900px}
+h2{margin:0 0 12px;color:var(--n)}label.f{font-weight:600;font-size:13px}
+input[type=text],input[type=tel],input[type=email],input[type=password],textarea{width:100%;padding:11px;border:1px solid #c5cedd;border-radius:8px;font:inherit;margin:4px 0 12px}
+button{font:inherit;cursor:pointer;border:0;border-radius:8px;padding:10px 16px;background:var(--n);color:#fff}
+button.o{background:#fff;color:var(--n);border:1px solid var(--n)}button.g{background:var(--g)}button.r{background:var(--r)}button.p{background:var(--p)}button:disabled{opacity:.4;cursor:not-allowed}
+.er{color:var(--r);min-height:20px;font-size:14px}.c{text-align:center}a{color:var(--n)}
+ul.ins li{margin:7px 0}
+.eh{display:flex;justify-content:space-between;align-items:center;background:var(--n);color:#fff;padding:8px 14px;position:sticky;top:0;z-index:5}
+.eh small{display:block;opacity:.8}.eh img{height:46px;background:#fff;border-radius:50%}
+.tmr{font:700 22px ui-monospace,Menlo,Consolas,monospace;background:#0f2a4d;padding:4px 14px;border-radius:8px}
+#ex{user-select:none;-webkit-user-select:none}
+.wrap{display:grid;grid-template-columns:1fr 300px;gap:12px;padding:12px;max-width:1200px;margin:auto}
+.qc,#pal{background:#fff;border-radius:10px;box-shadow:0 2px 12px #1d3f6e22;padding:16px}
+.qh{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #dde3ee;padding-bottom:8px}
+.chip{background:#e3ebf8;color:var(--n);padding:2px 10px;border-radius:99px;font-size:13px}
+.qt{font-size:18px;margin:16px 0}
+.op{display:flex;gap:10px;align-items:center;border:1px solid #c5cedd;border-radius:8px;padding:11px;margin:8px 0;cursor:pointer}.op.sel{background:#e3ebf8;border-color:var(--n)}
+.op b{color:var(--n);min-width:20px}
+#pal h3{margin:0 0 8px;color:var(--n)}#grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.q{padding:0;aspect-ratio:1;background:#d9dfea;color:#333;border-radius:6px;font-size:13px}.q.v{background:var(--r);color:#fff}.q.a{background:var(--g);color:#fff}.q.m{background:var(--p);color:#fff}.q.c{outline:3px solid #f2a900}
+.leg{font-size:12px;display:flex;flex-wrap:wrap;gap:4px 10px;margin-bottom:8px}.leg i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:3px}
+.bar{position:sticky;bottom:0;background:#fff;box-shadow:0 -2px 10px #0002;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:10px}
+.mob{display:none}
+.ov{display:none;position:fixed;inset:0;background:#000d;color:#fff;z-index:99;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px;gap:14px;font-size:18px}
+.kv{width:100%;border-collapse:collapse}.kv td{padding:6px 8px;border-bottom:1px solid #e6ebf3}.kv td:first-child{color:#5b6a85;width:42%}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:14px 0}.tiles div{background:#f3f6fb;border-radius:8px;padding:10px;text-align:center}.tiles b{display:block;font-size:22px}
+.ch{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}.ch svg{width:100%;height:auto}
+.tw{overflow-x:auto}.tw table{border-collapse:collapse;font-size:13px;min-width:800px}.tw td,.tw th{border:1px solid #d5dcea;padding:5px 8px;text-align:left}.tw th{background:var(--n);color:#fff}
+@media(max-width:820px){.wrap{grid-template-columns:1fr;padding:8px}#pal{position:fixed;top:0;right:0;bottom:0;width:82%;max-width:320px;z-index:20;transform:translateX(105%);transition:.2s;overflow:auto;border-radius:0}#pal.open{transform:none}.mob{display:inline-block}.qt{font-size:16px}.brand img{height:54px}.brand h1{font-size:16px}.tmr{font-size:18px}}
+</style></head><body>
+
+<div id="rg" class="s on"><div class="brand"><img class="lg" alt="Seamate"><h1>Seamate Achievers Batch Test</h1></div>
+<div class="card"><h2>Student Registration</h2>
+<label class="f">Student name *</label><input id="nm" type="text" autocomplete="name">
+<label class="f">Mobile number *</label><input id="ph" type="tel" maxlength="10" inputmode="numeric">
+<label class="f">Email address *</label><input id="em" type="email" autocomplete="email">
+<div class="er" id="rerr"></div><button onclick="reg()" style="width:100%">Continue</button></div>
+<p class="c"><a href="#" onclick="show('al');return false">Admin login</a></p></div>
+
+<div id="al" class="s"><div class="brand"><img class="lg" alt=""><h1>Seamate Achievers Batch Test</h1></div>
+<div class="card"><h2>Admin Login</h2><label class="f">Admin ID</label><input id="aid" type="text" autocomplete="off"><label class="f">Password</label><input id="apw" type="password" autocomplete="off">
+<div class="er" id="aerr"></div><button onclick="adm()" style="width:100%">Login</button><p class="c"><a href="#" onclick="show('rg');return false">Back to registration</a></p></div></div>
+
+<div id="ad" class="s"><div class="brand"><img class="lg" alt=""><h1>Student Database</h1></div>
+<div class="card wide"><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px"><button class="g" onclick="csv()">Download Excel (CSV)</button><button class="o" onclick="showAdm()">Refresh</button><button class="o" onclick="show('rg')">Logout</button></div><div class="tw" id="at"></div></div></div>
+
+<div id="in" class="s"><div class="brand"><img class="lg" alt=""><h1>Seamate Achievers Batch Test</h1></div>
+<div class="card wide"><h2>Instructions</h2><ul class="ins">
+<li><b>Questions:</b> 200 MCQs, one question per page. Sections: Physics, Mathematics and Chemistry are mixed in one paper (70 Physics, 70 Maths, 60 Chemistry).</li>
+<li><b>Time:</b> 180 minutes (3 hours). The timer starts when Question 1 appears.</li>
+<li><b>Marking:</b> +1 for a correct answer, −0.25 (¼) for a wrong answer, 0 for not attempting.</li>
+<li><b>Navigation:</b> Previous, Clear, Mark for Review &amp; Next, Next and Submit. Use the question grid to jump to any question.</li>
+<li><b>Cheating rules:</b> If you switch tabs or apps you get a warning (3 warnings). A 4th switch means automatic disqualification and the test is submitted at once. Copy, right-click and console attempts are recorded and shown in your result.</li>
+<li><b>After submission:</b> write your doubt (mandatory), then tap <b>Share with admin</b> to send your result on WhatsApp.</li>
+<li><b>Admin WhatsApp:</b> 8116217554. Send your result here yourself. The admin cannot recover results deleted from chats.</li>
+<li>The leaderboard will be released on the next day.</li></ul>
+<label><input type="checkbox" id="ag"> I have read the instructions and agree to the rules.</label><br><br><button class="g" onclick="start()" style="width:100%">Start Test</button></div></div>
+
+<div id="ex" class="s"><header class="eh"><div><b id="un"></b><small>Achievers Batch Test</small></div><div id="tm" class="tmr">03:00:00</div><img class="lg" alt=""></header>
+<div class="wrap"><main class="qc"><div class="qh"><b id="qn"></b><span id="sj" class="chip"></span></div><p id="qt" class="qt"></p><div id="op"></div></main>
+<aside id="pal"><h3>Question Grid</h3><div class="leg"><span><i style="background:var(--g)"></i>Answered</span><span><i style="background:var(--r)"></i>Not answered</span><span><i style="background:var(--p)"></i>Review</span><span><i style="background:#d9dfea"></i>Not visited</span></div><div id="grid"></div><p id="cnt"></p><button class="o mob" onclick="$('pal').classList.remove('open')">Close</button></aside></div>
+<nav class="bar"><button id="pv" class="o" onclick="go(cur-1)">◀ Previous</button><button class="o" onclick="clr()">Clear option</button><button class="p" onclick="mrk()">Mark for Review &amp; Next</button><button id="nx" onclick="go(cur+1)">Next ▶</button><button class="r" onclick="sub()">Submit</button><button class="o mob" onclick="$('pal').classList.add('open')">☰ Grid</button></nav>
+<div id="wn" class="ov"></div></div>
+
+<div id="rs" class="s"><div class="brand"><img class="lg" alt=""><h1>Seamate Achievers Batch Test</h1></div><div id="rb"></div></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const LOGO="data:image/jpeg;base64,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",ADMIN_WA="918116217554";
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbwp-JChYfA07eHxrKm5_y2Ef_MMvsW5ZZyEMXQDoMckMhEEmFwku6F2i4kSpCytRgDtdw/exec";
+const AH=4364645847690851,DUR=10800,PASS=40;
+const $=i=>document.getElementById(i);document.querySelectorAll(".lg").forEach(i=>i.src=LOGO);
+const H=s=>{let a=0xdeadbeef,b=0x41c6ce57;for(let i=0,c;i<s.length;i++){c=s.charCodeAt(i);a=Math.imul(a^c,2654435761);b=Math.imul(b^c,1597334677)}a=Math.imul(a^a>>>16,2246822507)^Math.imul(b^b>>>13,3266489909);b=Math.imul(b^b>>>16,2246822507)^Math.imul(a^a>>>13,3266489909);return 4294967296*(2097151&b)+(a>>>0)};
+const Q=`If A = 2i+3j−k and B = i−2j+k, the scalar product A·B is|−5|−3|4|1
+Number of real solutions of ∣x²+4x+3∣ + 2x + 5 = 0|0|1|2|3
+Which set of quantum numbers is NOT permissible for an electron?|n=3, l=2, m=+1, s=+½|n=2, l=2, m=0, s=−½|n=4, l=0, m=0, s=−½|n=3, l=1, m=−1, s=+½
+A convex lens of focal length 20 cm forms a real inverted image twice the object size. Object distance is|10 cm|30 cm|15 cm|25 cm
+If sinθ + cosecθ = 2, then sin¹⁰θ + cosec¹⁰θ =|1|2|2¹⁰|0
+According to VSEPR theory, which species is strictly linear?|SO₂|CO₂|H₂O|O₃
+A wire of resistance R is stretched to twice its length (mass constant). New resistance is|2R|4R|R/2|R/4
+lim(x→0) sin5x / tan3x =|5/3|3/5|1|0
+IUPAC name of CH₃CH(OH)CH₂CHO is|3-hydroxybutanal|2-hydroxybutanal|1-oxobutan-3-ol|butan-3-ol-1-al
+Dimensional formula of Universal Gravitational Constant G|[M⁻¹L³T⁻²]|[ML²T⁻²]|[M⁻¹L²T⁻¹]|[ML³T⁻²]
+Sum of first n natural numbers is|n(n+1)/2|n(n−1)/2|n(n+1)|n(2n+1)/2
+Quicklime (CaO) reacts with water to give slaked lime with heat release. This reaction is|Endothermic|Exothermic & Combination|Decomposition|Displacement
+A body starts from rest with uniform acceleration. Ratio of distances in 3rd second to 5th second|3/5|5/9|9/25|5/7
+Number of distinct terms in the expansion of (x+y)¹⁴|13|14|15|16
+Oxidation state of sulfur in H₂SO₄|+4|+6|−2|+2
+Two 4 Ω resistors in parallel, in series with 8 Ω. Equivalent resistance|10 Ω|6 Ω|12 Ω|2 Ω
+If ax²+bx+c=0 has real and equal roots, b²−4ac equals|>0|<0|=0|≥1
+Which metallic oxide is amphoteric?|Na₂O|Al₂O₃|SO₂|CaO
+A 5 kg body is acted on by perpendicular forces 6 N and 8 N. Acceleration is|2 m/s²|1.4 m/s²|10 m/s²|0.5 m/s²
+Common difference of AP with nth term aₙ = 3n+7|3|7|10|4
+Hybridization of each carbon in ethyne|sp³|sp²|sp|dsp²
+Work done by centripetal force over one complete revolution|2πFR|−2πFR|Zero|Infinite
+If tanA = 3/4, cos2A =|7/25|24/25|1/5|16/25
+Gas evolved when zinc reacts with dilute H₂SO₄|O₂|H₂|SO₂|CO₂
+Particle dropped from 20 m. Speed at ground (g=10 m/s²)|10 m/s|20 m/s|15 m/s|25 m/s
+Ways to arrange 5 distinct books on a shelf|24|60|120|720
+Conjugate acid of NH₃|NH₂⁻|NH₄⁺|NH₄OH|N₂H₄
+Escape velocity from Earth's surface is approx|8.0 km/s|11.2 km/s|9.8 km/s|42.0 km/s
+Points (1,2), (x,4), (3,6) are collinear. x =|2|1|0|−2
+Functional group of an ester linkage|−COOH|−COOR|−CHO|−CO−
+Vehicle covers half the distance at v₁ and the other half at v₂. Average speed|(v₁+v₂)/2|2v₁v₂/(v₁+v₂)|√(v₁v₂)|v₁v₂/(v₁+v₂)
+Modulus of z = 3+4i|7|5|√7|25
+Unpaired electrons in gaseous Fe²⁺ (Z=26)|0|4|5|2
+SI unit of magnetic flux|Tesla|Weber|Henry|Gauss
+Slope of a line perpendicular to 2x−3y+5=0|2/3|−3/2|3/2|−2/3
+Modern Periodic Law arranges elements by increasing|Atomic mass|Atomic volume|Atomic number|Neutron count
+Angle between velocity and acceleration in uniform circular motion|0°|45°|90°|180°
+Sum of infinite GP with a=6, r=1/3|9|18|12|8
+Bronsted-Lowry base is a|Proton donor|Proton acceptor|Electron donor|Electron acceptor
+A 10 g bullet at 400 m/s stops in 0.02 s. Average resistive force|200 N|400 N|100 N|50 N
+Distance between P(2,−3) and Q(6,0)|4|5|7|√13
+Element with highest first ionization enthalpy|Boron|Carbon|Nitrogen|Oxygen
+Focal length of a plane mirror|0|1 m|Infinite|−1 m
+lim(x→2) (x³−8)/(x−2)|4|8|12|16
+pH of 1.0×10⁻³ M HCl at 25°C|3|11|7|1
+If linear momentum is doubled, kinetic energy increases by|100%|200%|300%|400%
+Derivative of cos(x²)|−sin(x²)|−2x sin(x²)|2x sin(x²)|−2 sin x
+Molecular geometry of H₂O|Linear|Trigonal planar|Bent / V-shaped|T-shaped
+Magnetic field at the centre of a circular loop (radius r, current I) is proportional to|I/r|I/r²|I²/r|Ir
+If log₂(x−1)=3, x =|7|8|9|10
+de Broglie wavelength of an electron is inversely proportional to its|Mass only|Velocity only|Linear momentum|Charge
+Masses M and 4M at distance d; separation halved. Attraction becomes|2F|4F|8F|16F
+Radius of circle x²+y²−4x+6y−12=0|3|4|5|25
+Which state variable is intensive?|Enthalpy|Volume|Temperature|Internal energy
+SI unit of electric potential difference|Ampere|Volt|Coulomb|Ohm
+cos75° =|(√6−√2)/4|(√6+√2)/4|(√3−1)/2|(√2−1)/2
+General formula of acyclic alkynes|CₙH₂ₙ₊₂|CₙH₂ₙ|CₙH₂ₙ₋₂|CₙHₙ
+In a perfectly elastic 1-D collision, the conserved quantities are|Momentum only|Kinetic energy only|Both momentum and KE|Neither
+10th term of AP 2, 7, 12, …|47|45|52|50
+In an electrolytic cell, the cathode is where|Oxidation occurs|Reduction occurs|Electrons are released|Anions discharge
+Young's modulus of a perfectly rigid body|0|1|Infinite|Indeterminate
+A={1,2,3}, B={3,4,5}. Cardinality of A×B|3|6|9|5
+Ideal gas, isothermal expansion: ΔU is|Positive|Negative|Zero|Volume dependent
+Twinkling of stars is due to|Total internal reflection|Atmospheric refraction|Dispersion|Scattering
+Parabola with focus (2,0) and directrix x=−2|y²=4x|y²=8x|x²=8y|y²=−8x
+Ground-state configuration of Cr (Z=24)|[Ar]4s²3d⁴|[Ar]4s¹3d⁵|[Ar]4s⁰3d⁶|[Ar]3d⁵4s²
+Dimensional formula of surface tension|[ML⁰T⁻²]|[MLT⁻²]|[ML⁻¹T⁻²]|[ML²T⁻²]
+¹⁰C₃ =|120|210|720|360
+Metal that is liquid at room temperature|Gallium|Bromine|Mercury|Potassium
+A 2 kg projectile is fired upward at 20 m/s. Maximum height (g=10)|10 m|20 m|40 m|15 m
+α, β are roots of x²−5x+6=0. α²+β² =|25|13|12|19
+Force holding water molecules together in liquid phase|Covalent bonding|Ionic bonding|Hydrogen bonding|Coordinate bonding
+SI unit of resistivity|Ω|Ω·m|Ω/m|S·m
+f(x)=sin x. f′(π/2) =|1|0|−1|1/2
+Salt giving an alkaline solution by hydrolysis|NaCl|NH₄Cl|CH₃COONa|K₂SO₄
+Pascal's principle applies to fluids that are|Compressible and flowing|Incompressible and at rest|Ideal and turbulent|Viscous and accelerating
+Midpoint of (4,8) and (6,−2)|(5,3)|(10,6)|(5,5)|(2,5)
+Oxidation number of Cr in K₂Cr₂O₇|+3|+6|+7|+5
+Field inside a long solenoid resembles that of a|Bar magnet|Single electric charge|Magnetic monopole|Electric dipole
+Probability of an event is 0.05. Probability of non-occurrence|0.50|0.95|0.05|0.095
+Which behaves as a Lewis acid?|NH₃|AlCl₃|H₂O|OH⁻
+In SHM, acceleration magnitude is maximum at|Mean position|Extreme turning points|Half-amplitude|It is constant
+sec²60° − tan²60° =|0|1|2|√3
+Catalyst in Haber's synthesis of ammonia|Pt|Finely divided Fe with Mo|Ni|V₂O₅
+Terminal velocity of a sphere in a viscous medium varies with radius as|vₜ ∝ r|vₜ ∝ r²|vₜ ∝ 1/r|vₜ ∝ r³
+Eccentricity e of an ellipse satisfies|e=0|0<e<1|e=1|e>1
+Hund's rule: electrons in degenerate orbitals occupy|With anti-parallel spins first|Singly with parallel spins first|Pairing first|Only s-orbitals
+Kirchhoff's junction law is a consequence of conservation of|Energy|Charge|Momentum|Mass
+Non-zero vectors a and b are orthogonal iff|a×b=0|a·b=0|a=b|∣a∣=∣b∣
+CaSO₄·½H₂O is commercially called|Gypsum|Plaster of Paris|Bleaching powder|Epsom salt
+Two forces of equal magnitude F act at 120°. Resultant|F|2F|√2F|√3F
+A is a 2×2 matrix with ∣A∣=5. ∣2A∣ =|10|20|5|40
+Halogen with the highest negative electron gain enthalpy|Fluorine|Chlorine|Bromine|Iodine
+Absolute temperature of an ideal gas reflects its|Total potential energy|Average translational kinetic energy|Volume|Pressure only
+Derivative of ln(3x+1)|1/(3x+1)|3/(3x+1)|1/x|3x/(3x+1)
+Functional isomer of ethanol|Methoxymethane|Ethanal|Acetone|Ethanoic acid
+SHM at x=A/2: ratio KE : PE|1:3|3:1|1:4|1:1
+Number of diagonals in a convex hexagon|6|9|12|15
+Alkaline earth metal with diagonal relationship to Al|Be|Mg|Ca|Ba
+A 1000 W appliance runs 2 h daily. Energy used in 30 days|30 kWh|60 kWh|15 kWh|120 kWh
+Focus of parabola y²=12x|(3,0)|(0,3)|(−3,0)|(0,−3)
+Universal gas constant R in SI units|8.314 J/(mol·K)|0.0821 J/(mol·K)|1.987 J/(mol·K)|83.14 J/(mol·K)
+Light passes obliquely from a denser to a rarer medium. The refracted ray|Bends towards normal|Bends away from normal|Does not bend|Reflects totally
+tanθ=1, θ in Quadrant I. θ =|π/6|π/4|π/3|π/2
+Homonuclear diatomic with bond order 3|O₂|N₂|O₂⁻|F₂
+Runner completes one lap on a circular track of radius 14 m. Displacement|88 m|44 m|0 m|28 m
+Distance of (3,4) from the origin|3|4|5|7
+Conjugate base of HSO₄⁻|H₂SO₄|SO₄²⁻|H⁺|SO₃
+An ideal step-up transformer increases the|Current|Power|Alternating voltage|Frequency
+∫₀^(π/2) cos x dx =|0|1|−1|π/2
+Bleaching powder is made by passing Cl₂ through|Dry slaked lime|Limestone|Quicklime|Gypsum
+Which quantity stays constant in ideal 2D projectile motion?|Vertical velocity|Horizontal velocity|Total linear momentum|Position vector
+Length of latus rectum of x²/16 + y²/9 = 1|9/2|9/4|8/3|18
+Molar volume of an ideal gas at STP (0°C, 1 atm)|22.4 L|24.0 L|20.0 L|11.2 L
+Torque of force F at position r is|F·r|r×F|mv|dp/dt
+Discriminant of 2x²−4x+3=0|−8|8|40|−4
+Functional group giving CO₂ effervescence with NaHCO₃|Alcohol|Carboxylic acid|Aldehyde|Ether
+Sound waves cannot propagate through|Air|Water|Steel|Vacuum
+Angle between u=i+j and v=i−j|0°|45°|90°|180°
+Element with highest Pauling electronegativity|Fluorine|Oxygen|Nitrogen|Chlorine
+A particle has KE 32 J at speed 4 m/s. Mass|2 kg|4 kg|8 kg|16 kg
+3-digit even numbers from {1,2,3,4,5} without repetition|24|12|36|48
+Le Chatelier: an exothermic reversible reaction shifts forward by|Raising temperature|Lowering temperature|Removing catalyst|Adding inert gas
+A concave mirror gives an erect, magnified virtual image when the object is|At F|Between F and C|Between P and F|Beyond C
+5th term from the end of AP 3, 7, 11, …, 95|79|83|87|75
+Permanent hardness of water is mainly due to salts of|Sodium and Potassium|Calcium and Magnesium|Iron and Copper|Lithium and Zinc
+Time rate of change of linear momentum is|Impulse|Net external force|Kinetic energy|Power
+lim(x→0) (eˣ−1)/x|0|1|e|Undefined
+Molar mass of heavy water D₂O|18 g/mol|20 g/mol|22 g/mol|19 g/mol
+Work done moving a test charge over an equipotential surface|Positive|Negative|Zero|Path dependent
+Roots of x²−px+q=0 differ by 1. Then|p²=4q+1|p²=4q−1|q²=4p+1|p²=q+1
+Oxidation of ethanol with acidified K₂Cr₂O₇ gives|Methanoic acid|Ethanoic acid|Methanol|Propanone
+Centre of mass of a thin uniform circular ring|Its geometric centre|The outer rim|The inner rim|Any point on it
+Line with slope 2 through (1,3)|2x−y+1=0|2x+y−5=0|x−2y+5=0|x+2y−7=0
+Reversible adiabatic expansion of an ideal gas obeys|PV=constant|PVᵞ=constant|TV=constant|P/T=constant
+Ratio of speed of light in vacuum to that in a medium|Optical power|Critical angle|Refractive index|Dispersion
+sin150° =|1/2|−1/2|√3/2|−√3/2
+Oxidation state of oxygen in H₂O₂|−2|−1|+1|0
+Rotational analogue of mass|Angular momentum|Torque|Moment of inertia|Angular velocity
+If ⁿC₈ = ⁿC₂, n =|10|16|6|8
+Saponification is alkaline hydrolysis of|Alkanes|Fats / triglyceride esters|Primary amines|Alkenes
+SI base unit of luminous intensity|Lumen|Lux|Candela|Watt
+Vertex of parabola y=(x−3)²+4|(3,4)|(−3,4)|(4,3)|(3,−4)
+Quantum number determining orbital orientation|Principal (n)|Azimuthal (l)|Magnetic (mₗ)|Spin (s)
+Weight W on Earth's surface; body lifted to height h=R. New weight|W/2|W/4|W/8|W/√2
+∫xeˣ dx =|eˣ(x−1)+C|eˣ(x+1)+C|xeˣ+C|eˣ+C
+CH₃CH₂−O−CH₂CH₃ is an|Ester|Ketone|Ether|Aldehyde
+A wire carrying current northward lies in a vertically upward magnetic field. Lorentz force points|East|West|South|Downwards
+Slope of AB for A(1,2), B(4,6)|3/4|4/3|1|2
+Benzene (C₆H₆) contains how many σ and π bonds?|12σ, 3π|6σ, 3π|9σ, 3π|12σ, 6π
+Period of a simple pendulum (small amplitude) depends on|Mass of bob|Length of pendulum|Amplitude|Material of bob
+Sum of first 8 terms of 1, 2, 4, 8, …|127|255|256|511
+Transition elements belong to which block?|s-block|p-block|d-block|f-block
+Newton's third law: action and reaction|Act on the same body|Act on two different bodies|Cancel each other internally|Are unequal in magnitude
+Slope of tangent to y=x²−4x at x=3|2|1|0|−2
+Conjugate base of H₂O|H₃O⁺|OH⁻|O²⁻|H₂
+Total internal reflection occurs only when the angle of incidence is|Less than critical angle|Zero|Greater than critical angle|Equal to Brewster angle
+Standard deviation of {5,5,5,5,5}|5|0|1|25
+Group 14 element with maximum catenation|Silicon|Carbon|Germanium|Lead
+Frequency of domestic AC supply in India|60 Hz|50 Hz|100 Hz|220 Hz
+lim(x→0) (1−cos x)/x²|0|1|1/2|2
+Weakest intermolecular interaction|Ionic bond|Hydrogen bond|Dipole-dipole force|London dispersion force
+Energy stored in a capacitor charged to V|CV|½CV²|½C²V|2CV²
+If tanθ+cotθ=2, tan²θ+cot²θ =|2|4|1|0
+Heating a sulfide ore strongly in excess air below its melting point is|Calcination|Roasting|Smelting|Refining
+SHM amplitude A. KE = PE at displacement|A/2|A/√2|A/4|A√3/2
+Permutations of the letters of "MATH"|12|24|48|6
+pH of pure water at 25°C|0|7|14|1
+Resistance of an ideal ammeter|Zero|Infinite|1 Ω|100 Ω
+Angle between lines y=x and y=−x|30°|45°|60°|90°
+Element with the strongest metallic character|Na|Mg|Al|Si
+A person jumps forward from an unanchored rowboat onto the pier. The boat moves|Forward|Backward|Remains motionless|Sideways
+Principal argument of z=1+i|π/6|π/4|π/3|π/2
+Empirical formula of glucose (C₆H₁₂O₆)|CHO|CH₂O|CHO₂|C₂H₄O₂
+Rate of heat dissipation in resistor R carrying current I|IR|I²R|IR²|I/R
+Area bounded by y=x, the x-axis and x=4|4|8|16|2
+Conjugate acid of HCO₃⁻|H₂CO₃|CO₃²⁻|CO₂|OH⁻
+A hydraulic press works on|Archimedes' principle|Bernoulli's principle|Pascal's law|Torricelli's law
+cos0° + sin90° + tan45° =|1|2|3|0
+Ground-state configuration of Neon (Z=10)|1s²2s²2p⁴|1s²2s²2p⁶|1s²2s²2p⁵|1s²2p⁸
+g at the centre of the Earth|9.8 m/s²|0 m/s²|Infinite|4.9 m/s²
+Circle centred at origin with radius 5|x²+y²=5|x²+y²=10|x²+y²=25|x+y=5
+Work done by static friction on a cylinder rolling without slipping|Positive|Negative|Zero|Infinite
+log₁₀(1000) =|1|2|3|4
+1-D elastic collision of equal masses, one at rest. After collision|Both stop|Velocities are interchanged|Both move at half speed|They rebound equally
+If a·b = ∣a×b∣, the angle between a and b is|0°|45°|90°|180°
+A ray through the optical centre of a thin lens emerges|Deviated by 90°|Undeviated|Totally reflected|Dispersed
+Sum of first 20 positive odd integers|200|400|380|420
+Temperature of a blackbody is doubled. Emissive power increases by a factor of|2|4|8|16
+sinθ=3/5, θ in Quadrant I. cosθ =|4/5|3/4|5/4|2/5
+Lenz's law is a manifestation of conservation of|Charge|Energy|Momentum|Mass
+Derivative of tan x|sec x|sec²x|−cosec²x|cot x
+A system with no exchange of matter or energy is|Open|Closed|Isolated|Semi-open
+Distance between parallel lines y=2x+1 and y=2x+6|5|5√5|√5|1
+Focal length of a concave mirror with radius of curvature 30 cm|−15 cm|+15 cm|−60 cm|+60 cm
+Number of subsets of a 4-element set|4|8|16|32
+Speed of sound in ideal air is independent of|Temperature|Humidity|Gas pressure|Molar mass
+x²−kx+9=0 has equal real roots. k =|±3|±6|±9|±18
+Capacitance of an isolated parallel-plate capacitor increases when|Plate area is increased|Plate distance is increased|Dielectric is removed|Charge is increased
+lim(x→0) (√(1+x)−1)/x|1|1/2|0|2`.split("\n").map(l=>{const a=l.split("|");return{q:a[0],o:a.slice(1)}});
+const K="AABBBBBAAAABBCBACBAACCABBCBBABBBBBBCCABABCCCACBCACCBCCBACCABCCCBBBAACBBCBBCBABABBBBBBBBBBBABBBBABBABAABBBCCBCBABAABABDCABABCABBBBCABAABCABCABCACBACBBABBCBABCBBBCDBABBBBADABBBBBACCBBCCCBBBBDABBCCACCBAB".split("");
+const SB=i=>i<180?"PMC"[i%3]:"PM"[i%2],SN={P:"Physics",M:"Mathematics",C:"Chemistry"},L="ABCD";
+let U,cur=0,ans=Array(200).fill(-1),mk=Array(200).fill(0),vis=Array(200).fill(0),sw=0,ch={copy:0,rc:0,con:0,fs:0},t0,tEnd,tm,live=0,fsOn=0,R,rec;
+const show=i=>{document.querySelectorAll(".s").forEach(e=>e.classList.toggle("on",e.id==i));scrollTo(0,0)};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=s=>`${s/60|0}m ${s%60}s`,wa=t=>`https://wa.me/${ADMIN_WA}?text=${encodeURIComponent(t)}`;
+const db=()=>{try{return JSON.parse(localStorage.sm_db||"[]")}catch(e){return[]}},sv=d=>{try{localStorage.sm_db=JSON.stringify(d)}catch(e){}};
+const post = (data) => {
+  if (!SHEET_URL) {
+    console.error("SHEET_URL is missing");
+    return;
+  }
+
+  fetch(SHEET_URL, {
+    method: "POST",
+    mode: "no-cors",
+    body: JSON.stringify(data),
+    keepalive: true
+  }).catch(error => {
+    console.error("Database submission failed:", error);
+  });
+};
+/* ===== Google Apps Script database helpers (cloud DB, additional to localStorage) ===== */
+function generateSubmissionId() {
+  const d = new Date();
+
+  const pad = n => String(n).padStart(2, "0");
+
+  return "SM-" +
+    d.getFullYear() +
+    pad(d.getMonth() + 1) +
+    pad(d.getDate()) + "-" +
+    pad(d.getHours()) +
+    pad(d.getMinutes()) +
+    pad(d.getSeconds()) + "-" +
+    Math.floor(1000 + Math.random() * 9000);
+}
+const sendResultToDatabase=()=>{try{post({type:"result",submissionId:rec.submissionId,testName:"Seamate Achievers Batch Test",studentName:U.n,phone:U.p,email:U.e,totalMarks:R.sc,maximumMarks:200,percentage:R.pc,passFail:R.pf,timeTaken:fmt(R.sec),submissionDate:new Date().toLocaleString("en-GB"),correctAnswers:R.c,incorrectAnswers:R.w,unattempted:R.u,attempted:R.at,tabSwitches:sw,copyAttempts:ch.copy,rightClickAttempts:ch.rc,consoleDevTools:ch.con,antiCheatingStatus:R.stt,doubtFeedback:"Pending",generatedBy:"Seamate Online Test Platform"})}catch(e){}};
+const sendDoubtToDatabase=doubtText=>{const submissionId=rec.submissionId;post({type:"doubt",submissionId:submissionId,doubtFeedback:doubtText})};
+/* In-page dialog: native alert()/confirm() are blocked inside sandboxed iframes/previews */
+function smDialog(msg,onOk,showCancel){
+  let o=document.getElementById("smdlg");
+  if(!o){o=document.createElement("div");o.id="smdlg";o.className="ov";o.style.zIndex=200;document.body.appendChild(o)}
+  o.innerHTML="";
+  const m=document.createElement("div");m.style.whiteSpace="pre-line";m.style.maxWidth="420px";m.textContent=msg;o.appendChild(m);
+  const r=document.createElement("div");r.style.display="flex";r.style.gap="10px";
+  const close=()=>{o.style.display="none"};
+  if(showCancel){const c=document.createElement("button");c.textContent="Cancel";c.className="o";c.onclick=close;r.appendChild(c)}
+  const k=document.createElement("button");k.textContent=showCancel?"Yes, submit":"OK";
+  k.onclick=()=>{close();if(onOk)onOk()};r.appendChild(k);o.appendChild(r);o.style.display="flex"}
+const err=m=>{$("rerr").textContent=m};
+function reg(){const n=$("nm").value.trim(),p=$("ph").value.trim(),e=$("em").value.trim();
+if(n.length<2)return err("Enter your full name.");if(!/^\d{10}$/.test(p))return err("Enter a valid 10-digit mobile number.");if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e))return err("Enter a valid email address.");
+U={n,p,e};err("");show("in")}
+function start(){if(!$("ag").checked)return smDialog("Please tick the agreement box.");
+try{document.documentElement.requestFullscreen().catch(()=>{})}catch(e){}
+t0=Date.now();tEnd=t0+DUR*1000;rec=null;live=1;$("un").textContent=U.n;show("ex");
+$("grid").innerHTML=Q.map((_,i)=>`<button class="q" id="b${i}" onclick="go(${i})">${i+1}</button>`).join("");go(0);tick();tm=setInterval(tick,500)}
+function tick(){const s=Math.max(0,Math.round((tEnd-Date.now())/1000));$("tm").textContent=[s/3600|0,(s/60|0)%60,s%60].map(x=>String(x).padStart(2,"0")).join(":");$("tm").style.background=s<300?"#d64545":"";if(!s)finish("time up")}
+function go(i){if(i<0||i>199)return;cur=i;vis[i]=1;const q=Q[i];$("qn").textContent=`Question ${i+1} of 200`;$("sj").textContent=SN[SB(i)];$("qt").textContent=q.q;
+$("op").innerHTML=q.o.map((_,k)=>`<label class="op${ans[i]==k?" sel":""}"><input type="radio" name="o" ${ans[i]==k?"checked":""} onchange="ans[cur]=${k};go(cur)"><b>${L[k]}.</b><span></span></label>`).join("");
+document.querySelectorAll("#op span").forEach((s,k)=>s.textContent=q.o[k]);
+$("pv").disabled=!i;$("nx").disabled=i==199;pal();$("pal").classList.remove("open")}
+function pal(){Q.forEach((_,i)=>{$("b"+i).className="q"+(mk[i]?" m":ans[i]>=0?" a":vis[i]?" v":"")+(i==cur?" c":"")});$("cnt").textContent=`Answered: ${ans.filter(x=>x>=0).length} / 200`}
+const clr=()=>{ans[cur]=-1;go(cur)},mrk=()=>{mk[cur]=1;go(cur+1);pal()};
+function sub(){smDialog(`Submit the test now?\nAnswered ${ans.filter(x=>x>=0).length} of 200 questions. You cannot change answers after submitting.`,()=>finish("student"),true)}
+document.addEventListener("visibilitychange",()=>{if(!live||!document.hidden)return;sw++;if(sw>3)return finish("auto - tab switching");
+$("wn").innerHTML=`<div>⚠️ Warning ${sw}/3<br>You left the test screen. One more switch after 3 warnings disqualifies you and submits the test automatically.</div><button onclick="$('wn').style.display='none'">I understand</button>`;$("wn").style.display="flex"});
+document.addEventListener("copy",e=>{if(live){ch.copy++;e.preventDefault()}});
+document.addEventListener("contextmenu",e=>{if(live){ch.rc++;e.preventDefault()}});
+document.addEventListener("keydown",e=>{const c=e.ctrlKey||e.metaKey;if(live&&(e.key=="F12"||c&&e.shiftKey&&/^[ijc]$/i.test(e.key)||c&&/^u$/i.test(e.key))){ch.con++;e.preventDefault()}});
+document.addEventListener("fullscreenchange",()=>{if(document.fullscreenElement)fsOn=1;else if(live&&fsOn)ch.fs++});
+addEventListener("beforeunload",e=>{if(live){e.preventDefault();e.returnValue=""}});
+function finish(why){if(!live)return;if(rec&&rec.submitted)return;live=0;clearInterval(tm);$("wn").style.display="none";try{document.exitFullscreen()}catch(e){}
+const S={P:[0,0,0,0],M:[0,0,0,0],C:[0,0,0,0]};let c=0,w=0;
+Q.forEach((_,i)=>{const s=S[SB(i)];s[3]++;if(ans[i]<0)s[2]++;else if(L[ans[i]]==K[i]){s[0]++;c++}else{s[1]++;w++}});
+const at=c+w,sc=c-w*.25,pc=sc/2,sec=Math.min(DUR,Math.round((Date.now()-t0)/1000));
+const stt=sw>3?"DISQUALIFIED - auto-submitted for tab switching":sw?`Warned (${sw} tab switch${sw>1?"es":""})`:"Clean";
+R={S,c,w,u:200-at,at,sc,pc,sec,stt,pf:pc>=PASS?"Pass":"Fail"};
+const submissionId=generateSubmissionId();
+rec={id:Date.now(),date:new Date().toLocaleString("en-GB"),name:U.n,phone:U.p,email:U.e,marks:sc,percentage:pc.toFixed(2),result:R.pf,timeTaken:fmt(sec),correct:c,incorrect:w,unattempted:R.u,tabSwitches:sw,copyAttempts:ch.copy,rightClicks:ch.rc,consoleAttempts:ch.con,fullscreenExits:ch.fs,cheatingStatus:stt,submittedBy:why,doubt:"",submissionId:submissionId,submitted:true};
+const d=db();d.push(rec);sv(d);try{res()}finally{setTimeout(sendResultToDatabase,0)}}
+function bars(S){const cl=["#2e9e5b","#d64545","#98a2b3"];let s=`<svg viewBox="0 0 310 190">`;Object.keys(S).forEach((k,g)=>{[0,1,2].forEach(j=>{const v=S[k][j],h=v/70*120,x=15+g*100+j*28;s+=`<rect x="${x}" y="${150-h}" width="24" height="${h}" fill="${cl[j]}"/><text x="${x+12}" y="${146-h}" font-size="10" text-anchor="middle">${v}</text>`});s+=`<text x="${57+g*100}" y="167" font-size="11" text-anchor="middle">${SN[k]}</text>`});return s+`<line x1="10" y1="150" x2="305" y2="150" stroke="#888"/><text x="10" y="184" font-size="10" fill="#2e9e5b">■ Correct</text><text x="90" y="184" font-size="10" fill="#d64545">■ Incorrect</text><text x="180" y="184" font-size="10" fill="#7d8798">■ Unattempted</text></svg>`}
+function radar(v,l){const C=130,Y=105,Rr=75,P=(f,i)=>{const a=-Math.PI/2+i*1.2566;return[(C+Rr*f*Math.cos(a)).toFixed(1),(Y+Rr*f*Math.sin(a)).toFixed(1)]};let s=`<svg viewBox="0 0 260 215">`;
+[.25,.5,.75,1].forEach(f=>s+=`<polygon points="${l.map((_,i)=>P(f,i)).join(" ")}" fill="none" stroke="#c5cedd"/>`);
+l.forEach((t,i)=>{const[x,y]=P(1,i),[a,b]=P(1.2,i);s+=`<line x1="${C}" y1="${Y}" x2="${x}" y2="${y}" stroke="#c5cedd"/><text x="${a}" y="${+b+3}" font-size="10" text-anchor="middle">${t}</text>`});
+return s+`<polygon points="${v.map((x,i)=>P(Math.max(0,x)/100,i)).join(" ")}" fill="#1d3f6e55" stroke="#1d3f6e" stroke-width="2"/></svg>`}
+function res(){show("rs");const S=R.S,sp=k=>(S[k][0]-S[k][1]*.25)/S[k][3]*100;
+$("rb").innerHTML=`<div class="card wide"><h2>Performance Report</h2><table class="kv">
+<tr><td>Name</td><td>${esc(U.n)}</td></tr><tr><td>Phone</td><td>${U.p}</td></tr><tr><td>Email</td><td>${esc(U.e)}</td></tr>
+<tr><td>Time taken</td><td>${fmt(R.sec)}</td></tr><tr><td>Marks</td><td><b>${R.sc} / 200</b> (${R.pc.toFixed(2)}%) - ${R.pf}</td></tr>
+<tr><td>Cheating status</td><td style="color:${sw?"#d64545":"#2e9e5b"}"><b>${R.stt}</b></td></tr></table>
+<div class="tiles"><div><b>${R.at}</b>Attempted</div><div><b style="color:#2e9e5b">${R.c}</b>Correct</div><div><b style="color:#d64545">${R.w}</b>Incorrect</div><div><b>${R.u}</b>Unattempted</div></div>
+<div class="ch">${bars(S)}${radar([sp("P"),sp("M"),sp("C"),R.at/2,R.at?R.c/R.at*100:0],["Physics","Maths","Chemistry","Attempt %","Accuracy"])}</div></div>
+<div class="card wide"><h2>Your doubts <span style="color:#d64545;font-size:14px">(mandatory)</span></h2><p>Write your doubts about the test or any question. Write "No doubts" if you have none. This unlocks sharing and download.</p>
+<textarea id="db" rows="4" placeholder="Type your doubt here"></textarea><button onclick="doubt()">Send doubt to admin</button><p id="ds" class="er" style="color:#2e9e5b"></p></div>
+<div class="card wide c"><button id="shb" class="g" disabled onclick="open(wa(msg()),'_blank')">Share result with admin (WhatsApp)</button> <button id="pdb" class="o" disabled onclick="pdf()">Download performance + answer key (PDF)</button></div>`}
+function doubt(){const t=$("db").value.trim();if(t.length<3)return smDialog("Please write your doubt, or write 'No doubts'.");rec.doubt=t;const d=db(),x=d.find(r=>r.id==rec.id);if(x){x.doubt=t;sv(d)}sendDoubtToDatabase(t);
+$("ds").textContent="Doubt saved. Now share your result with the admin.";$("shb").disabled=$("pdb").disabled=false;open(wa(`💬 *Doubt from ${U.n}* (${U.p})\n\n${t}`),"_blank")}
+const msg=()=>`🎓 *seamate  -  Achievers batch Test  Results*\n\n👤 *Student Details:*\nName: ${U.n}\nPhone: ${U.p}\nE mail address : ${U.e}\n\n📊 *Test Performance:*\nTotal Marks: ${R.sc}/200\nPercentage: ${R.pc.toFixed(2)}%\nPass/Fail : ${R.pf}\nTime Taken: ${fmt(R.sec)}\nDate: ${new Date().toLocaleDateString("en-GB")}\n\n✅ Correct Answers: ${R.c}\n❌ Incorrect Answers: ${R.w}\n⊘ Unattempted: ${R.u}\n📝 Attempted: ${R.at}\n\n⚠️ *Anti-Cheating Report:*\nTab Switches: ${sw}\nCopy Attempts: ${ch.copy}\nRight-Click Attempts: ${ch.rc}\nConsole Access Attempts: ${ch.con}\nFullscreen Exit Count: ${ch.fs}\nStatus: ${R.stt}\n\nDoubt: ${rec.doubt}\n\nGenerated on Seamate Online Test Platform`;
+function pdf(){const J=window.jspdf;if(!J)return print();const d=new J.jsPDF(),ln=(t,y)=>d.text(t,12,y);let y=14;d.setFontSize(14);ln("Seamate - Achievers Batch Test: Performance Report",y);d.setFontSize(10);
+[`Name: ${U.n}`,`Phone: ${U.p}   Email: ${U.e}`,`Marks: ${R.sc}/200 (${R.pc.toFixed(2)}%) ${R.pf}   Time: ${fmt(R.sec)}`,`Correct ${R.c} | Incorrect ${R.w} | Unattempted ${R.u}`,`Cheating status: ${R.stt}`].forEach(t=>{y+=6;ln(t,y)});
+y+=9;d.setFont("courier","bold");ln("Q#   Subject       Yours Key  Result",y);d.setFont("courier","normal");
+Q.forEach((_,i)=>{y+=5;if(y>287){d.addPage();y=14}const a=ans[i]<0?"-":L[ans[i]];ln(String(i+1).padEnd(5)+SN[SB(i)].padEnd(14)+a.padEnd(6)+K[i].padEnd(5)+(a=="-"?"Skipped":a==K[i]?"Correct":"Wrong"),y)});
+d.save("Seamate_Performance_"+U.n.replace(/\W+/g,"_")+".pdf")}
+function adm(){if(H($("aid").value.trim()+":"+$("apw").value)!==AH){$("aerr").textContent="Invalid ID or password.";return}$("aerr").textContent="";$("apw").value="";showAdm()}
+function showAdm(){const d=db();show("ad");$("at").innerHTML=d.length?`<table><tr><th>#</th><th>Date</th><th>Name</th><th>Phone</th><th>Email</th><th>Marks</th><th>%</th><th>Result</th><th>Time</th><th>Cheating</th><th>Doubt</th></tr>${d.map((r,i)=>`<tr><td>${i+1}</td><td>${esc(r.date)}</td><td>${esc(r.name)}</td><td>${r.phone}</td><td>${esc(r.email)}</td><td>${r.marks}</td><td>${r.percentage}</td><td>${r.result}</td><td>${r.timeTaken}</td><td>${esc(r.cheatingStatus)}</td><td>${esc(r.doubt)}</td></tr>`).join("")}</table>`:"<p>No student records yet.</p>"}
+function csv(){const d=db();if(!d.length)return smDialog("No records yet.");const k=Object.keys(d[0]).filter(x=>x!="id"),q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
+const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["\ufeff"+[k.join(",")].concat(d.map(r=>k.map(x=>q(r[x])).join(","))).join("\r\n")],{type:"text/csv"}));a.download="Seamate_Student_Database.csv";a.click()}
+</script></body></html>
